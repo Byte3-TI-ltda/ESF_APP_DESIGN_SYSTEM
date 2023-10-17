@@ -1,0 +1,20 @@
+{
+    "$schema": "https://turborepo.org/schema.json",
+    "pipeline": {
+        "dev": {
+            "cache": false // Nao guarda cache do script de dev pois deve usar o mais atualizado
+        },
+        "build": {
+            // Guarda o cache das pastas geradas pelo script de build de cada projeto
+            "outputs": [
+                "dist/**",
+                "storybook-static/**"
+            ],
+            // Esta opcao serve para informar ao turbo que as builds dos projetos dependem da build de outros projetos
+            // Ex: o projeto react depende da build do projeto de tokens
+            "dependsOn": [
+                "^build"
+            ]
+        }
+    }
+}

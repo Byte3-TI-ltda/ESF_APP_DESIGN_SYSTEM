@@ -1,0 +1,6 @@
+{
+    "extends": "@byte3-esf/ts-config/react.json",
+    "include": [
+        "src"
+    ]
+}
