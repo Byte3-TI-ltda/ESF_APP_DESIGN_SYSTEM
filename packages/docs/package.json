@@ -13,9 +13,11 @@
   },
   "dependencies": {
     "@byte3-esf/eslint-config": "*",
-    "@byte3-esf/ts-config": "*",
     "@byte3-esf/react": "*",
     "@byte3-esf/tokens": "*",
+    "@byte3-esf/ts-config": "*",
+    "@storybook/addon-a11y": "^7.5.0",
+    "phosphor-react": "^1.4.1",
     "polished": "^4.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
