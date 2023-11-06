@@ -4,7 +4,15 @@ import { Box, Text, TextInput, TextInputProps } from '@byte3-esf/react'
 export default {
   title: 'Form/Text Input',
   component: TextInput,
-  args: {},
+  args: {
+    variant: 'primary',
+  },
+  variant: {
+    options: ['primary', 'secondary'],
+    control: {
+      type: 'inline-radio',
+    },
+  },
   // Decorators serve para adicionar por volta um elemento pai onde nosso story de input fica dentro
   decorators: [
     (Story) => {
